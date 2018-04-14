@@ -36,7 +36,7 @@ main {
   overflow: hidden;
 }
 
-#houseImages { position:relative; width:4000px; transition: all .5s; }
+#houseImages { position:relative; width:6000px; transition-delay: 5s; transition: all 5s; }
 #houseImages img { float:left; }
 
 #bottomNav { margin-top:30px; }
@@ -80,6 +80,12 @@ main {
 
 .arryn { background-position:-253px -54px; }
 .arryn:hover { background-position:-253px 0px; }
+
+.frey { background-position:-303px -54px; }
+.frey:hover { background-position:-303px 0px; }
+
+.targaryen { background-position:-353px -54px; }
+.targaryen:hover { background-position:-353px 0px; }
 /* ----- end image sprite ----- */
 
 /* ----- classes for transitions ----- */
@@ -123,17 +129,85 @@ main {
 
 video {
 	width: 80%;
-	margin-top: 10%;
+	margin-top: 10px;
+  margin-bottom: 10px;
 	border: thin solid #949393;
 }
 
 .controls {
-  padding: 2em 0;
-  border: thin dashed white;
+  width: 300px;
+  height: 60px;
+  background-color: #333;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
 [data-icon] {
   font-size: 3em;
   color: white;
   cursor: pointer;
+  margin-top: 5px;
+}
+
+.house-info {
+  color: white;
+}
+
+#vol-on {
+  float: left;
+  margin-left: 30px;
+  font-size: 2em;
+  margin-top: 14px;
+}
+
+#vol-on:hover {
+  color: #999;
+}
+
+#vol-off {
+  float: right;
+  margin-right: 30px;
+  font-size: 2em;
+  margin-top: 14px;
+}
+
+#vol-off:hover {
+  color: #999;
+}
+
+.ff {
+  color: white;
+  float: right;
+  font-size: 10px;
+  display: block;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+#ff:hover {
+  color: #999;
+}
+
+.rwd {
+  color: white;
+  float: left;
+  font-size: 10px;
+  display: block;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#rwd:hover {
+  color: #999;
+}
+
+.house-info {
+  font-size: 14px;
+  font-family: 'Verdana', Arial, sans-serif;
+  color: white;
+  padding: 20px;
+  width: 600px;
+  text-align:justify;
+  margin: 0 auto;
+  line-height: 25px;
 }

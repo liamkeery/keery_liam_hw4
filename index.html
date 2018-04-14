@@ -20,6 +20,8 @@
     		<img src="images/tully.jpg"/>
     		<img src="images/greyjoy.jpg"/>
     		<img src="images/arryn.jpg"/>
+        <img src="images/frey.jpg"/>
+        <img src="images/targaryen.jpeg"/>
         </div>
     </section>
 
@@ -32,10 +34,12 @@
             <li><div class="sigilContainer tully" data-offset="3"></div></li>
             <li><div class="sigilContainer greyjoy" data-offset="4"></div></li>
             <li><div class="sigilContainer arryn" data-offset="5"></div></li>
+            <li><div class="sigilContainer frey" data-offset="6"></div></li>
+            <li><div class="sigilContainer targaryen" data-offset="7"></div></li>
         </ul>
     </nav>
 
-    <h1>clever tagline goes here</h1><!-- replace this with the house name -->
+    <h1></h1><!-- replace this with the house name -->
 
     <p class="house-info"></p><!-- replace this with house details (github gist for details) -->
 </main>
@@ -43,11 +47,26 @@
 <section class="lightbox">
     <span class="close-lightbox">x</span>
     <video>
-      <source src="video/House-Stark.mp4" type="video/mp4">
+      <source src="video/House-Arryn.mp4" type="video/mp4">
     </video>
+
     <div class="controls">
-      <i class="fas fa-pause-circle"></i>
-    </div>
+      <span class="playPause">
+        <i class="fas fa-pause-circle"></i>
+      </span>
+      <span class="volUp">
+        <i class="fas fa-volume-up" id="vol-on"></i>
+      </span>
+      <span class="volDown">
+        <i class="fas fa-volume-off" id="vol-off"></i>
+      </span>
+      <span class="ff">
+        <i class="fas fa-fast-forward" id="ff"></i>
+      </span>
+      <span class="rwd">
+        <i class="fas fa-fast-backward" id="rwd"></i>
+      </span>
+      </div>
 </section>
 <script src="js/GOT_master.js"></script>
 </body>
